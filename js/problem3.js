@@ -34,10 +34,6 @@
 
 */
 
-function changeElementText(element, answer) {
-    $(element).text(answer);
-}
-
 function fareForRide(distanceTraveled, timeWaiting, isNight) {
     changeElementText("#distanceTraveled", distanceTraveled);
     changeElementText("#timeWaiting", timeWaiting);

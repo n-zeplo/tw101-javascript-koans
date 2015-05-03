@@ -33,11 +33,6 @@
 
  */
 
-
-function changeElementText(element, answer) {
-    $(element).text(answer);
-}
-
 function isTrafficJam(numberOfAutoRickshaws, isAfterEightPm) {
     changeElementText("#numberOfRickshaws", numberOfAutoRickshaws);
     changeElementText("#beforeOrAfter", "before");

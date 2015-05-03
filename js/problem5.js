@@ -33,4 +33,24 @@
      count: 7
  */
 
-// Write your JavaScript here
+function correctAdvertisement(advertisements){
+    var correctedAdvertisement = "";
+    var wordCount = 0;
+
+    for (var i = 0; i < advertisements.length; i++) {
+        var ad = advertisements[i];
+        changeElementText("#advertisementText" + (i + 1), ad.join(" "));
+        wordCount += ad.length;
+
+        if(i === 1){
+            ad.reverse();
+        }
+
+        for (var j = 0; j < ad.length; j++) {
+            correctedAdvertisement += ad[j] + " "
+        }
+
+    }
+    changeElementText("#correctedAdvertisement", correctedAdvertisement);
+    changeElementText("#wordCount", wordCount);
+}

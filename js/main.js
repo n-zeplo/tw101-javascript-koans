@@ -13,6 +13,10 @@ $(document).ready(function() {
     countIndianCurrency([20, 50, 10, 20, 13, 500]);
 
     // Problem 5
-    // call your problem 5 code here
+    correctAdvertisement([
+                        ["zara", "dhyaan", "dein"],
+                        ["mazarat", "chahenge"], // reverse this line
+                        ["attention", "please"]
+                        ]);
 
 });

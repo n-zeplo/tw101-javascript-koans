@@ -26,10 +26,6 @@
 
 */
 
-function changeElementText(element, answer) {
- $(element).text(answer);
-}
-
 function countIndianCurrency(listOfRupees) {
     changeElementText("#listOfRupees", listOfRupees.join(", "));
     var totalRs = 0;
