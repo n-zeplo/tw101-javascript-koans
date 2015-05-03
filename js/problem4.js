@@ -26,4 +26,33 @@
 
 */
 
-// Write your JavaScript here
+function changeElementText(element, answer) {
+ $(element).text(answer);
+}
+
+function countIndianCurrency(listOfRupees) {
+    changeElementText("#listOfRupees", listOfRupees.join(", "));
+    var totalRs = 0;
+
+    for(var i = 0;i < listOfRupees.length; i++){
+        if(!isIndianCurrency(listOfRupees[i])){
+            break;
+        }
+        totalRs += listOfRupees[i];
+    }
+
+    changeElementText("#totalRs", totalRs);
+}
+
+function isIndianCurrency(money){
+    var indianDenominations = [5, 10, 20, 50, 100, 500, 1000];
+    var counter = 0;
+
+    while(counter < indianDenominations.length){
+        if(money === indianDenominations[counter]){
+            return true;
+        }
+        counter++;
+    }
+    return false;
+}
